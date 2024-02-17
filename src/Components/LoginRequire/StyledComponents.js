@@ -41,6 +41,7 @@ export const GotoLoginBtn = styled.button`
     @media (min-width: 700px) {
         font-size: 20px;
     }
+    margin-bottom: 30px;
 `
 
 export const LoginErrorImage = styled.img`
