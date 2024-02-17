@@ -104,45 +104,55 @@ const ContactUs = () => {
         ...prev,
         isLoading: true,
       }))
-
-      const url = 'https://lordjesus.onrender.com/send-message'
-      const messageDetails = {
-        name: messageData.name,
-        number: messageData.phoneNumber,
-        message: messageData.message
+      
+      try {
+        const url = 'https://lordjesus.onrender.com/send-message'
+        const messageDetails = {
+          name: messageData.name,
+          number: messageData.phoneNumber,
+          message: messageData.message
+        }
+        const options = {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify(messageDetails)
       }
-      const options = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(messageDetails)
-    }
-    
-      const response = await fetch(url, options)
-      const data =  await response.json()
-      if (response.ok) {
-        setMessageData(prev => ({
-          ...prev,
-          isLoading: false,
-          isSend: true,
-          isError: false,
-          successMsg: data.successMsg,
-          message: '',
-          phoneNumber: '',
-          name: ''
-        }))
-      } else {
+      
+        const response = await fetch(url, options)
+        const data =  await response.json()
+        if (response.ok) {
+          setMessageData(prev => ({
+            ...prev,
+            isLoading: false,
+            isSend: true,
+            isError: false,
+            successMsg: data.successMsg,
+            message: '',
+            phoneNumber: '',
+            name: ''
+          }))
+        } else {
+          setMessageData(prev => ({
+            ...prev,
+            isLoading: false,
+            isSend: false,
+            isError: true,
+            errMsg: data.err_msg,
+          }))
+        }
+      } catch (e) {
         setMessageData(prev => ({
           ...prev,
           isLoading: false,
           isSend: false,
           isError: true,
-          errMsg: data.err_msg,
+          errMsg: "Sorry there is some network issue",
         }))
       }
-      }
-    
+      
+    }
   }
 
   const onChangeName = (event) => {
