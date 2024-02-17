@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Koulen&family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Koulen&family=Mandali&family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=DM+Sans:opsz,wght@9..40,500&family=Koulen&family=Mandali&family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=DM+Sans:opsz,wght@9..40,500&family=Josefin+Sans&family=Koulen&family=Mandali&family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=DM+Sans:opsz,wght@9..40,500&family=Josefin+Sans&family=Koulen&family=Mandali&family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=DM+Sans:opsz,wght@9..40,500&family=Josefin+Sans&family=Koulen&family=Mako&family=Mandali&family=Marmelad&family=Miltonian+Tattoo&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,113 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+  outline: none !important;
 }
 
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(219, 219, 219, 0.27000001072883606);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tick{
+  color: #8feb5e;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.tooltip {
+  background-color: #3b8765 !important;
+  color: "#ffffff";
+  font-family: Mandali !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.tool {
+  background-color: #3db3a1 !important;
+  color: "#ffffff";
+  font-family: Mandali !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.church-icon{
+  font-size: 50px;
+  display: inline-block;
+}
+@media (max-width: 700px) {
+    .church-icon{
+      display: none;
+    }
+}
+.tool-delete{
+  background-color: #db2623 !important;
+  color: "#ffffff";
+  font-family: Mandali !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.tool-cancel{
+  background-color: #3966b3 !important;
+  color: "#ffffff";
+  font-family: Mandali !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.show-delete{
+  background-color: #fc0f03 !important;
+  color: "#ffffff";
+  font-family: Mandali !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+p{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+h1{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+img{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+button{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
