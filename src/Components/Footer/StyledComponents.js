@@ -60,7 +60,7 @@ export const Btn = styled.button`
 `
 export const CreatorName = styled.p`
     font-family: "Mandali", sans-serif;
-    font-size: 17px;
+    font-size: 13px;
     color: #ffff;
     width: 90%;
     margin-top: 0;
