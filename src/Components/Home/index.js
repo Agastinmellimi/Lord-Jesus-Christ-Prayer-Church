@@ -3,8 +3,9 @@ import {useEffect, useState} from 'react'
 import Slider from 'react-slick'
 import {ThreeDots} from 'react-loader-spinner'
 import { BiError } from "react-icons/bi";
-import { TiArrowLeftOutline } from "react-icons/ti";
-import { TiArrowRightOutline } from "react-icons/ti";
+
+import { FcPrevious } from "react-icons/fc";
+import { FcNext } from "react-icons/fc";
 
 import Navbar from '../Navbar'
 import Footer from '../Footer';
@@ -99,8 +100,8 @@ const Home = () => {
             autoplay: true,
             speed: 600,
             autoplaySpeed: 3000,
-            nextArrow: <TiArrowRightOutline color='rgb(99, 222, 214)' size={25} />,
-            prevArrow: <TiArrowLeftOutline color='rgb(99, 222, 214)' size={25} />,
+            nextArrow: <FcNext size={25} />,
+            prevArrow: <FcPrevious size={25} />,
             cssEase: "linear"
         }
 
