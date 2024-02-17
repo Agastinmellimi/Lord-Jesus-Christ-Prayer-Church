@@ -188,7 +188,7 @@ const Profile = () => {
                                                        </LogBtnContainer>
                                                     </PopupContainer>
                                                   )}
-                                               </Popup>
+                                            </Popup>
                                         </NameContainer>
                                            <Email><HighlatedText>email:</HighlatedText> {apiResponseData.userDetails.email}</Email>
                                        </>

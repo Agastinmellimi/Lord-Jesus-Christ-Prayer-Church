@@ -301,7 +301,7 @@ const Attendance = () => {
             ) : (
                 <>
                     <DateContainer>
-                        <Label htmlFor='date'>date</Label>
+                        <Label htmlFor='date'>DATE</Label>
                         <DateInput id='date' type='date' value={date} placeholder="mm/dd/yyyy" onChange={onChangeDate}/>
                     </DateContainer>
                     

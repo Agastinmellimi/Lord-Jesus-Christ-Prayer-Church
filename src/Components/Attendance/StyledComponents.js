@@ -168,6 +168,7 @@ export const DateInput = styled.input`
 
 export const DateContainer = styled.div`
       display: flex;
+      justify-content: flex-end;
       align-items: center;
       width: 90%;
       flex-wrap: wrap;
@@ -262,9 +263,10 @@ export const GirlImage = styled.img`
     }
 `
 export const Label = styled.label`
-    font-family: Mandali;
+    font-family: 'Mandali', sans-serif;
     font-size: 25px;
     color: #dbd9da;
+    letter-spacing: 0.04em;
     margin-right: 20px;
     -ms-user-select: none;
     -webkit-user-select: none;

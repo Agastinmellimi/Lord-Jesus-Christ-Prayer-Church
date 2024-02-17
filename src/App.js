@@ -1,5 +1,5 @@
 
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, Navigate} from 'react-router-dom'
 import {Component} from 'react'
 
 import HandlerContext from './Context/HandlerContext';
@@ -16,6 +16,7 @@ import Attendance from './Components/Attendance';
 import ChildrensList from './Components/ChildrensList';
 import ViewAttendance from './Components/ViewAttendance';
 import Profile from './Components/Profile';
+import NotFound from './Components/NotFound';
 import './index.css';
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
           <Route exact path='/contact' element={<ContactUs/>}/>
           <Route exact path='/authenticate-error' element={<LoginRequire/>}/>
           <Route exact path='/view-attendance' element={<ViewAttendance/>} />
+          <Route exact path='/not-found' element={<NotFound/>}/>
           <Route element={<ProtectedRoutes/>}>
                 <Route exact path='/root' element={<ChurchRootWebsite/>} />
                 <Route exact path='/messages' element={<Messages/>}/>
@@ -44,6 +46,7 @@ class App extends Component {
                 <Route exact path='/Sunday-school-children' element={<ChildrensList/>} />
                 <Route exact path='/profile' element={<Profile/>}/>
           </Route>
+          <Route path='*' element={<Navigate replace to="/not-found" />}/>
         </Routes>
       </HandlerContext.Provider>
     )

@@ -16,6 +16,7 @@ export const ErrorShowText = styled.p`
     font-size: 15px;
     width: 90%;
     line-height: 25px;
+    align-self: center;
     margin-top: 0;
     text-align: center;
     @media (min-width: 700px) {
@@ -27,13 +28,15 @@ export const GotoLoginBtn = styled.button`
     background: rgb(99, 222, 214);
     border: none;
     outline: none;
-   
+    margin-top: 15px;
     border-radius: 7px;
     padding: 5px 20px 5px 20px;
     font-size: 17px;
     color: rgb(46, 42, 72);
     font-weight: 600;
     font-family: Mandali;
+    align-self: center;
+    line-height: 35px;
     cursor: pointer;
     @media (min-width: 700px) {
         font-size: 20px;
@@ -43,6 +46,7 @@ export const GotoLoginBtn = styled.button`
 export const LoginErrorImage = styled.img`
      width: 100%;
      max-width: 500px;
+     margin-top: 20px;
      animation: motion 7s ease-in-out infinite alternate;
    @keyframes motion {
        to {
