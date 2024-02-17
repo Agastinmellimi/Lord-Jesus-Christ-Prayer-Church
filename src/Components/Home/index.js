@@ -145,7 +145,7 @@ const Home = () => {
         <SliderContainer>
              <Slider {...settings}>
                  <ImageContainer>
-                    <SliderImage alt='family' src='https://res.cloudinary.com/dkrpgt9kd/image/upload/v1707712401/qz4eqav3kdyj9vccoanl.jpg'/>
+                    <SliderImage alt='family' src='https://res.cloudinary.com/dkrpgt9kd/image/upload/v1708177719/uyvami80oso0rx1jdicv.jpg'/>
                     <LineText style={{marginBottom: 0}}><HighlatedText>L</HighlatedText>ord <HighlatedText>J</HighlatedText>esus <HighlatedText>C</HighlatedText>hrist <HighlatedText>P</HighlatedText>reyar <HighlatedText>C</HighlatedText>hurch</LineText>
                     <LineText style={{marginTop: 0}}>Our beloved pastor <HighlatedText>M.Christopher</HighlatedText> garu family,</LineText>
                  </ImageContainer>
