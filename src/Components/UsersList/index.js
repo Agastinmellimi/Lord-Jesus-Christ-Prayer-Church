@@ -273,7 +273,7 @@ const UsersList = () => {
                                       >
                                       {close => (
                                           <PopupContainer>
-                                          <ConfirmText>Are you sure? you want to delete user</ConfirmText>
+                                          <ConfirmText>Are you sure? you want to delete it</ConfirmText>
                                           <BtnContainer>
                                               <ReactTooltip id='delCancel' place='bottom' className='tool-cancel' delayShow={1000}/>
                                               <Button data-tooltip-id='delCancel' data-tooltip-content={"cancel"} type='button' onClick={() => close()}><TiCancel/></Button>
