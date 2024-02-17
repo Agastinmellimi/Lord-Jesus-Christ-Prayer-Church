@@ -65,6 +65,9 @@ export const ChildrenStatus = styled.li`
 export const FirstLetterContainer = styled.div`
    width: 40px;
    height: 40px;
+   -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
    display: flex;
    font-family: Mandali;
    justify-content: center;

@@ -29,7 +29,8 @@ import {AttendanceContainer,
     SubitSuccessContainer,
     SubmitScContentContainer,
     SuccessText,
-    SubmitSuccessImage
+    SubmitSuccessImage,
+    Label
     
 } from './StyledComponents'
 
@@ -300,7 +301,8 @@ const Attendance = () => {
             ) : (
                 <>
                     <DateContainer>
-                    <DateInput type='date' value={date} placeholder="mm/dd/yyyy" onChange={onChangeDate}/>
+                        <Label htmlFor='date'>date</Label>
+                        <DateInput id='date' type='date' value={date} placeholder="mm/dd/yyyy" onChange={onChangeDate}/>
                     </DateContainer>
                     
                     <ChildrensListContainer>

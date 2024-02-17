@@ -162,8 +162,6 @@ export const DateInput = styled.input`
       color: #fff;
       display: flex;
       width: 150px;
-      margin-left: auto;
-      align-self: flex-end;
       justify-content: center;
       font-family: Mandali;
 `
@@ -172,6 +170,7 @@ export const DateContainer = styled.div`
       display: flex;
       align-items: center;
       width: 90%;
+      flex-wrap: wrap;
       align-self: center;
 `
 export const ChildrenContentContainer = styled.div`
@@ -260,6 +259,18 @@ export const GirlImage = styled.img`
         } from {
             transform: scale(0.9);
         }
+    }
+`
+export const Label = styled.label`
+    font-family: Mandali;
+    font-size: 25px;
+    color: #dbd9da;
+    margin-right: 20px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    @media (max-width: 700px) {
+        font-size: 18px;
     }
 `
 

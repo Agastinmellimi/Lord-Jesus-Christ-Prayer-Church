@@ -307,7 +307,7 @@ const ViewAttendance = () => {
                 <SelctDateHead>Attendance details by Dates</SelctDateHead>
                 <SearchDataContainer>
                     <SearchDateInput type='date' value={searchDate} placeholder='YYYY/MM/DD' onChange={changeDate}/>
-                    <ReactTooltip id='searchDate' place='bottom' className='tool'/>
+                    <ReactTooltip id='searchDate' place='bottom' anchorSelect="#not-clickable" className='tool'/>
                     <SearchBtn type='button' data-tooltip-id='searchDate' data-tooltip-content={"Search by Date"} onClick={onSearchDate}><FaSearch/></SearchBtn>
                 </SearchDataContainer>
             </SelectDateContainer>

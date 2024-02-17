@@ -45,7 +45,7 @@ const Navbar = () => {
                     <NavigateBtn type="button" data-tooltip-id="navigate" data-tooltip-delay-show={1000} data-tooltip-content={"Root Webpage"} onClick={navigateRoot}>
                         <IoNavigate/>
                     </NavigateBtn>
-                    <ReactTooltip id="menuBtn" place="bottom" className="tool"/>
+                    <ReactTooltip id="menuBtn" place="bottom" anchorSelect="#not-clickable" className="tool"/>
                     <MenubarBtn data-tooltip-id="menuBtn" data-tooltip-delay-show={1000} data-tooltip-content={"Menu"} type='button' onClick={() => setShowMenu(!showMenu)}>
                        {showMenu ? <IoClose/> : <LuMenu/> }
                     </MenubarBtn>

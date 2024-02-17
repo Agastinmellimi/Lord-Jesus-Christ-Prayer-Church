@@ -62,18 +62,18 @@ const ChurchNavbar = () => {
                 </NavOptionsConatiner>
                 <ReactTooltip id="back" place="bottom" className='tooltip'/>
                 <NavigateBtn type='button' data-tooltip-id="back" data-tooltip-delay-show={1000} data-tooltip-content={"back to main"} onClick={navigateMainHome}><ImArrowUpLeft2 /></NavigateBtn>
-                <ReactTooltip id="menu" place="bottom" className='tooltip' />
+                <ReactTooltip id="menu" place="bottom" className='tooltip' anchorSelect="#not-clickable"/>
                 <MenuBtn type='button' onClick={() => setShowMenu(!showMenu)} data-tooltip-id="menu" data-tooltip-delay-show={1000} data-tooltip-content={"Menu"}>
                     {showMenu ? <IoClose/> : <BsMenuButtonFill/>}
                 </MenuBtn>
-                <ReactTooltip id='profile' place='bottom' className='tooltip'/>
+                <ReactTooltip id='profile' place='bottom' className='tooltip' anchorSelect="#not-clickable"/>
                 <ProfileBtn type='button' data-tooltip-id='profile' data-tooltip-delay-show={1000} data-tooltip-content={"Profile"} onClick={clickProfile}>
                     <ProfileImage active={activeTab === 'Profile'} alt='profile' src='https://res.cloudinary.com/dkrpgt9kd/image/upload/v1707641841/bvhi9ypcmixrzolb1kfs.png'/>
                 </ProfileBtn>
             </NavContainer>
             <MobileOptionsContainer show={showMenu}>
             <NavLink to='/root' className='link' onClick={() => setActiveTab("Root")}>
-                <ReactTooltip id="Home" place="bottom" className='tooltip'/>
+                <ReactTooltip id="Home" place="bottom" className='tooltip' />
                 <MobileOption active={activeTab === 'Root'} data-tooltip-id="Home" data-tooltip-delay-show={1000} data-tooltip-content={"Home"}>
                         <VscRootFolder  />
                     </MobileOption>
