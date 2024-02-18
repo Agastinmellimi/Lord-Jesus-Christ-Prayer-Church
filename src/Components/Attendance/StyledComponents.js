@@ -148,7 +148,7 @@ export const FailureContainer = styled.div`
 export const LoadingViewContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin: auto;
 `
 
 export const DateInput = styled.input`

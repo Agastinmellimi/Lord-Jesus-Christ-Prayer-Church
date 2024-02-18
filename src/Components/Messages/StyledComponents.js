@@ -119,7 +119,7 @@ export const Name = styled.p`
 export const LoadingViewContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin: auto;
 `
 export const ErrorMessage = styled.p`
   font-family: Mandali;

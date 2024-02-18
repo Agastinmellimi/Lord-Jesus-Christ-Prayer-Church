@@ -15,14 +15,16 @@ export const NavContainer = styled.nav`
 export const NavLogo = styled.h1`
     font-family: Koulen;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 27px;
     letter-spacing: 0.05em;
     line-height: 20px;
     flex-grow: 1;
-    
     @media (min-width: 700px) {
       font-size: 30px;
-}
+   }
+   @media (max-width: 350px) {
+     font-size: 23px;
+   }
 `
 
 export const ProfileBtn = styled.button`
@@ -64,6 +66,7 @@ export const NavOption = styled.li`
    ${props => props.active && `
         color: #e88d66;
     `}
+    
 `
 export const MenuBtn = styled.button`
     outline: none;
@@ -71,11 +74,14 @@ export const MenuBtn = styled.button`
     background-color: transparent;
     cursor: pointer;
     color: rgb(99, 222, 214);
-    font-size: 25px;
+    font-size: 27px;
     padding-top: 7px;
     @media (min-width: 700px) {
         display: none;
     }
+    @media (max-width: 350px) {
+     font-size: 23px;
+   }
 `
 
 export const MobileOptionsContainer = styled.ul`

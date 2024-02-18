@@ -15,13 +15,16 @@ export const NavContainer = styled.nav`
 export const NavLogo = styled.h1`
     font-family: Koulen;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 27px;
     letter-spacing: 0.05em;
     line-height: 20px;
     flex-grow: 1;
     @media (min-width: 700px) {
       font-size: 30px;
-}
+   }
+   @media (max-width: 350px) {
+     font-size: 23px;
+   }
 `
 
 export const NavOptionsConatiner = styled.ul`
@@ -58,6 +61,9 @@ export const MenubarBtn = styled.button`
     @media (min-width: 700px) {
     display: none;
 }
+   @media (max-width: 350px) {
+     font-size: 23px;
+   }
 `
 
 export const MobileOptionsContainer = styled.ul`
