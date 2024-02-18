@@ -218,7 +218,10 @@ export const ServiceName = styled.p`
     user-select: none;
     line-height: 13px;
     text-align: center;
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
+        font-size: 15px;
+   }
+    @media (max-width: 370px) {
         font-size: 11px;
    }
 `
@@ -229,13 +232,17 @@ export const ServiceDescription = styled.p`
     font-weight: 400;
     font-size: 14px;
     margin-top: 0;
-    line-height: 15px;
+    line-height: 17px;
     padding: 0 3px 0 3px;
     text-align: center;
     
     color: rgb(190, 222, 99);
-    @media (max-width: 400px) {
-        font-size: 9px;
+    @media (max-width: 500px) {
+        font-size: 12px;
+        line-height: 17px;
+   }
+    @media (max-width: 370px) {
+        font-size: 10px;
    }
 `
 
